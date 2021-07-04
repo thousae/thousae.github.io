@@ -4,7 +4,8 @@ title:  "<<the house where the mermaid sleeps>> review"
 date: 2021-05-21
 excerpt: "Korean book review  안녕"
 tag:
--book review
+- book review
+- ㅔㅐㄴㅅ
 comments: true
 ---
 
