@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "<<the house where the mermaid sleeps>> review"
+title:  "<the house where the mermaid sleeps>한글 review"
 date: 2021-05-21
-excerpt: "Korean book review  안녕"
+excerpt: "Korean book review "
 tag:
 - book review
 - post
