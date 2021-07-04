@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "<the house where the mermaid sleeps>한글 review"
+title:  "인어가 잠든 집 리뷰"
 date: 2021-05-21
-excerpt: "Korean book review "
+excerpt: "히가시노 게이고 장편 소설, '죽음'과 '사랑'으로 사람은 어디까지 시도 할 수 "
 tag:
 - book review
 - post
