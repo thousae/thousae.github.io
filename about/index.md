@@ -1,12 +1,12 @@
 ---
 layout: page
 title: About the Thousae
-tags: [about, Jekyll, theme]
+tags: [about]
 date: 2021-07-04
 comments: false
 ---
     
-<center><a href="http://thousae.github.io/Moon"><b>Thousae</b></a> is a positive, one of the developer.</center>
+<center><a href="http://thousae.github.io"><b>Thousae</b></a> is a positive, one of the developer.</center>
 
 ## Thousae Features
 * South Korean
