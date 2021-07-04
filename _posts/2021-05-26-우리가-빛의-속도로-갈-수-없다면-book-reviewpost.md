@@ -2,7 +2,7 @@
 layout: post
 title:  "우리가 빛의 속도로 갈 수 없다면"
 date: 2021-05-26
-excerpt: "김초엽 단편 소설, "
+excerpt: "김초엽 단편 소설, SF지만 실제로 있을 법한"
 tag:
 - book review
 - post
