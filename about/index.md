@@ -14,8 +14,3 @@ comments: false
 * Friendly
 * Leadership
 * C, C++, Python, JAVA
-
-
-## Getting Contact
-
-[Email](saehun0519@gmail.com){: .btn}
