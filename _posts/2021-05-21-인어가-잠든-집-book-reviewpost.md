@@ -6,7 +6,7 @@ excerpt: "히가시노 게이고 장편 소설, '죽음'과 '사랑'으로 사�
 tag:
 - book review
 - post
-comments: true
+comments: false
 ---
 
 ## 인어가 잠든 집
