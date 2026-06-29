@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="home">
+    <section class="hero" aria-label="Profile links">
+      <div class="hero-inner">
+        <p class="eyebrow">{{ site.author.role }}{% if site.author.affiliation %} / {{ site.author.affiliation }}{% endif %}</p>
+        <h1>{{ site.author.name }}</h1>
+        <p class="lede">{{ site.author.bio }}</p>
+        <div class="hero-links" id="links" aria-label="External links">
+          <a href="{{ site.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="{{ site.links.lab }}" target="_blank" rel="noopener">Lab</a>
+          <a href="{{ site.links.github }}" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#profile" aria-label="Continue to profile"></a>
+    </section>
+
+    {% include topbar.html %}
+    <main class="content home-content" id="profile">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
+

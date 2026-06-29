@@ -1,0 +1,44 @@
+title: Your Name
+description: Personal academic website and links.
+url: ""
+baseurl: ""
+lang: en
+timezone: Etc/UTC
+
+author:
+  name: Your Name
+  role: Researcher
+  affiliation: Your Lab
+  location: Seoul, Korea
+  email: ""
+  bio: "I work on robotics, machine learning, and reliable embodied intelligence."
+
+links:
+  linkedin: "https://www.linkedin.com/in/your-id"
+  lab: "https://your-lab.example.com"
+  github: "https://github.com/your-id"
+
+nav:
+  - title: About
+    url: /about/
+  - title: Research
+    url: /research/
+  - title: Links
+    url: /#links
+
+markdown: kramdown
+permalink: /:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
