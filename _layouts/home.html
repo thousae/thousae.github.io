@@ -14,6 +14,9 @@
           <a href="{{ site.links.lab }}" target="_blank" rel="noopener">Lab</a>
           <a href="{{ site.links.github }}" target="_blank" rel="noopener">GitHub</a>
         </div>
+        {% if site.author.email %}
+          <p class="hero-email"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+        {% endif %}
       </div>
       <a class="scroll-cue" href="#profile" aria-label="Continue to profile"></a>
     </section>

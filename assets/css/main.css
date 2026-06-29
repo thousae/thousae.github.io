@@ -45,8 +45,9 @@ a:focus {
 }
 
 .hero {
+  height: 100vh;
   min-height: 100vh;
-  min-height: 100svh;
+  overflow: hidden;
   display: grid;
   place-items: center;
   position: relative;
@@ -58,6 +59,13 @@ a:focus {
     linear-gradient(135deg, rgba(255,255,255,0.48), rgba(255,255,255,0.08)),
     repeating-linear-gradient(45deg, rgba(21,14,31,0.028) 0, rgba(21,14,31,0.028) 1px, transparent 1px, transparent 6px),
     #f0f0f0;
+}
+
+@supports (height: 100dvh) {
+  .hero {
+    height: 100dvh;
+    min-height: 100dvh;
+  }
 }
 
 .hero-inner {
@@ -117,6 +125,22 @@ a:focus {
   color: #ffffff;
   background: var(--ink);
   border-color: var(--ink);
+}
+
+.hero-email {
+  margin: 22px 0 0;
+  color: var(--light);
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.hero-email a {
+  color: var(--normal);
+}
+
+.hero-email a:hover,
+.hero-email a:focus {
+  color: var(--ink);
 }
 
 .scroll-cue {
@@ -267,8 +291,8 @@ footer span {
 
 @media (max-width: 700px) {
   .hero {
+    height: 100vh;
     min-height: 100vh;
-    min-height: 100svh;
     padding: 56px 20px 72px;
   }
 
@@ -315,3 +339,12 @@ footer span {
   }
 }
 
+
+@supports (height: 100dvh) {
+  @media (max-width: 700px) {
+    .hero {
+      height: 100dvh;
+      min-height: 100dvh;
+    }
+  }
+}

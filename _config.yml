@@ -10,8 +10,8 @@ author:
   role: Researcher
   affiliation: CSI Agent Group
   location: Seoul, Korea
-  email: ""
-  bio: "I work on robotics, machine learning, and reliable embodied intelligence."
+  email: "thousae@skku.edu"
+  bio: "I work on memory and cache systems for efficient LLM agent serving."
 
 links:
   linkedin: "https://www.linkedin.com/in/saehun-chun-9b19061ab/"
