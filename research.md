@@ -29,8 +29,6 @@ I study systems that make this tradeoff explicit. The goal is to reduce latency 
 
 ## Publications
 
-I keep this section for submitted or published papers only. I use the usual academic-homepage format: title first, authors second, venue third, and links at the end. Grouping by venue type keeps the list easy to scan without turning every paper into a separate section.
-
 ### International conferences
 
 1. **[Functional Cache Grafting: Robust and Rapid Code-Policy Synthesis for Embodied Agents](https://icml.cc/virtual/2026/poster/62313)**  
