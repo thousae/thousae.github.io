@@ -1,4 +1,4 @@
-title: Your Name
+title: Saehun Chun
 description: Personal academic website and links.
 url: "https://thousae.github.io"
 baseurl: ""
@@ -6,17 +6,17 @@ lang: en
 timezone: Etc/UTC
 
 author:
-  name: Your Name
+  name: Saehun Chun
   role: Researcher
-  affiliation: Your Lab
+  affiliation: CSI Agent Group
   location: Seoul, Korea
   email: ""
   bio: "I work on robotics, machine learning, and reliable embodied intelligence."
 
 links:
-  linkedin: "https://www.linkedin.com/in/your-id"
-  lab: "https://your-lab.example.com"
-  github: "https://github.com/your-id"
+  linkedin: "https://www.linkedin.com/in/saehun-chun-9b19061ab/"
+  lab: "https://csiagentgroup.com/"
+  github: "https://github.com/thousae"
 
 nav:
   - title: About
