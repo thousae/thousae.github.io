@@ -5,15 +5,15 @@ title: Home
 
 ## About
 
-I am a researcher interested in building intelligent systems that learn, adapt, and act in the real world. My work currently focuses on robotics, machine learning, and long-horizon decision making.
+I work on memory and cache systems for efficient LLM agent serving. My research studies how long-running agentic workflows can reuse computation, working memory, and KV-cache state across repeated or evolving tasks without losing consistency.
 
 ## Current Focus
 
-- Embodied AI and robot learning
-- Efficient adaptation and memory in learning systems
-- Reliable evaluation for deployed agents
+- **Agentic Memory Serving:** serving systems for LLM agents whose state grows across tool calls, files, plans, and conversations.
 
-## Recent Notes
+## Research Direction
 
-This site is intentionally small: a first screen for direct links, followed by a clean academic profile layout for research updates, writing, and project notes.
+Modern LLM agents do more than answer one prompt. They plan, call tools, edit files, observe state changes, and return to related tasks later. That shift breaks the usual assumption that each request can be served independently.
+
+My work asks what should be reused across these workflows, at what granularity, and how serving systems can trade off latency, memory footprint, cost, and correctness. The core theme is simple: make agent serving faster and cheaper by reusing the right computation and memory state, while avoiding stale or inconsistent context.
 
