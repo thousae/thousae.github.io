@@ -44,6 +44,12 @@ a:focus {
   border-bottom: 1px solid currentColor;
 }
 
+.hero,
+.profile-section {
+  height: 100vh;
+  min-height: 100vh;
+}
+
 .hero {
   height: 100vh;
   min-height: 100vh;
@@ -62,7 +68,8 @@ a:focus {
 }
 
 @supports (height: 100dvh) {
-  .hero {
+  .hero,
+  .profile-section {
     height: 100dvh;
     min-height: 100dvh;
   }
@@ -127,22 +134,6 @@ a:focus {
   border-color: var(--ink);
 }
 
-.hero-email {
-  margin: 22px 0 0;
-  color: var(--light);
-  font-size: 15px;
-  line-height: 22px;
-}
-
-.hero-email a {
-  color: var(--normal);
-}
-
-.hero-email a:hover,
-.hero-email a:focus {
-  color: var(--ink);
-}
-
 .scroll-cue {
   position: absolute;
   left: 50%;
@@ -173,6 +164,23 @@ a:focus {
   max-width: var(--column-width);
   margin: 0 auto 96px;
   padding: 0 var(--column-padding);
+}
+
+.profile-section {
+  overflow-y: auto;
+  scroll-margin-top: 0;
+}
+
+.profile-section .topbar {
+  padding-top: 42px;
+}
+
+.profile-section .content {
+  padding-bottom: 72px;
+}
+
+.home > footer {
+  display: none;
 }
 
 .home .topbar {
@@ -290,9 +298,13 @@ footer span {
 }
 
 @media (max-width: 700px) {
-  .hero {
+  .hero,
+  .profile-section {
     height: 100vh;
     min-height: 100vh;
+  }
+
+  .hero {
     padding: 56px 20px 72px;
   }
 
@@ -342,7 +354,8 @@ footer span {
 
 @supports (height: 100dvh) {
   @media (max-width: 700px) {
-    .hero {
+    .hero,
+    .profile-section {
       height: 100dvh;
       min-height: 100dvh;
     }
