@@ -7,7 +7,10 @@
   --ink: #150e1f;
   --accent: #8b6f47;
   --accent-2: #2f6f73;
-  --column-width: 860px;
+  --content-min: 680px;
+  --content-fluid: 72vw;
+  --content-max: 960px;
+  --column-width: min(clamp(var(--content-min), var(--content-fluid), var(--content-max)), calc(100vw - 48px));
   --column-padding: 30px;
   --title-font: "Oswald", sans-serif;
   --subtitle-font: "Open Sans", sans-serif;
