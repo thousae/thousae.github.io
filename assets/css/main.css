@@ -2,7 +2,7 @@
   --paper: #f8f9f7;
   --surface: #ffffff;
   --ink: #202c2b;
-  --muted: #586663;
+  --muted: #43524e;
   --accent: #25665b;
   --border: #dce3df;
   --body-font: "Open Sans", sans-serif;
@@ -14,8 +14,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 14px/1.7 var(--body-font);
-  -webkit-font-smoothing: antialiased;
+  font: 500 14px/1.7 var(--body-font);
   -webkit-text-size-adjust: 100%;
 }
 a { color: var(--accent); text-decoration: none; }
@@ -53,7 +52,7 @@ nav { display: flex; flex-wrap: wrap; gap: 28px; }
 .text-link { font-size: 12px; font-weight: 600; }
 .profile-more { display: inline-block; margin-top: 26px; }
 .research-intro { padding-bottom: 24px; }
-.research-intro h2 { margin: 0 0 14px; font-size: clamp(26px, 3vw, 38px); letter-spacing: -1.2px; font-weight: 600; line-height: 1.2; }
+.research-intro h2 { margin: 0 0 14px; font-size: clamp(26px, 3vw, 38px); letter-spacing: -1.2px; font-weight: 700; line-height: 1.2; }
 .research-intro > p:not(.eyebrow) { max-width: 720px; color: var(--muted); }
 .focus-section > h2, .section-heading h2 { margin: 0; font-size: 17px; font-weight: 700; letter-spacing: -0.4px; }
 .focus-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
@@ -65,11 +64,12 @@ nav { display: flex; flex-wrap: wrap; gap: 28px; }
 .section-heading { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px 16px; padding-bottom: 14px; }
 .publication { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; border-top: 1px solid var(--border); padding: 17px 0; }
 .venue { color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: 0.5px; }
-.venue span { display: block; color: var(--muted); font-weight: 400; }
+.venue span { display: block; color: var(--muted); font-weight: 600; }
 .publication h3 { margin: 0 0 6px; font-size: 14px; line-height: 1.5; }
 .publication h3 a { color: var(--ink); }
 .publication p:not(.venue) { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
 .publication .authors { line-height: 1.6; }
+.profile-details, .profile-links, .focus-item p, .publication p:not(.venue), footer { font-weight: 600; }
 .page { max-width: 820px; }
 .pagetitle { margin: 0 0 24px; font-size: 36px; letter-spacing: -1px; }
 .page h2 { margin: 32px 0 14px; font-size: 23px; scroll-margin-top: 24px; }
