@@ -19,12 +19,12 @@ links:
   github: "https://github.com/thousae"
 
 nav:
-  - title: About
-    url: /about/
+  - title: Home
+    url: /
   - title: Research
     url: /research/
-  - title: Links
-    url: /#links
+  - title: About
+    url: /about/
 
 markdown: kramdown
 permalink: /:title/

@@ -4,15 +4,18 @@ This is a Jekyll site prepared for GitHub Pages.
 
 ## Site structure
 
-- `index.md`: home-page research overview and current focus.
-- `_layouts/home.html`: profile/contact sidebar and selected publications.
-- `about.md`, `research.md`: detailed biography and research/publications.
+- `index.md`: short home-page introduction.
+- `_layouts/home.html`: profile links and complete publication list.
+- `_data/publications.yml`: shared publication records for Home and Research.
+- `_includes/publications.html`: numbered publication groups, author names, and venue details.
+- `research.md`: research directions and publication descriptions with stable paper anchors.
+- `about.md`: biography, education, experience, teaching, and contact.
 - `_config.yml`: profile details, external links, and navigation.
-- `assets/css/main.css`: shared styles, desktop columns, and mobile layout.
+- `assets/css/main.css`: single-column layout and responsive typography.
 
-The home page uses a compact profile sidebar alongside research information and
-selected papers. On mobile, these sections stack in a single column with normal
-page scrolling.
+Home presents the introduction and all papers in a compact reading layout. Paper
+titles link to their Research entries; About contains the longer biography and
+career details. Publication records are updated once in the shared YAML file.
 
 ## Local setup
 
