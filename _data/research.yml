@@ -1,9 +1,12 @@
 - id: robot-foundation-models
+  short_description: Efficient multimodal inference and serving.
   name: Robot Foundation Models
   description: Efficient inference and serving for multimodal models operating in continuous perception–action loops.
 - id: embodied-ai
+  short_description: VLA models and interactive embodied agents.
   name: Embodied AI & Robot Learning
   description: VLA models, robotic manipulation, long-horizon embodied tasks, and interactive agents.
 - id: efficient-ai-systems
+  short_description: Memory, caching, and computation reuse.
   name: Efficient AI Systems
   description: Computation reuse, memory systems, caching, and low-latency inference for foundation models.

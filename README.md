@@ -5,7 +5,7 @@ This is a Jekyll site prepared for GitHub Pages.
 ## Site structure
 
 - `index.md`: shared research identity and a short introduction.
-- `_layouts/home.html`: equal research areas, selected projects, and compact international publications.
+- `_layouts/home.html`: brief research areas, profile icons, and compact international publications.
 - `_data/research.yml`: Robot Foundation Models, Embodied AI & Robot Learning, Efficient AI Systems.
 - `_data/projects.yml`: ongoing robot inference, HeMeR, and FCGraft descriptions.
 - `_data/publications.yml`: complete author lists, venues, and verified links.
@@ -17,7 +17,7 @@ This is a Jekyll site prepared for GitHub Pages.
 - `_config.yml`: metadata, external profiles, and navigation.
 - `assets/css/main.css`: responsive single-column layout.
 
-Home omits full author lists, domestic papers, GPA, and teaching details. Full
+Home omits selected-project descriptions, full author lists, domestic papers, GPA, and teaching details. Full
 publication records remain under Publications; teaching and older projects remain
 in the academic CV. No unverified metrics, skills, profile links, or demo assets
 are published. Paper links are separate from non-clickable titles.

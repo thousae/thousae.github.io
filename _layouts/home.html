@@ -7,36 +7,21 @@ layout: default
     <p class="identity">Robot Foundation Models · Embodied AI · Efficient AI Systems</p>
     {{ content }}
     <ul class="profile-links" id="links" aria-label="Contact and profiles">
-      <li><a href="mailto:{{ site.author.email }}">Email</a></li>
-      <li><a href="{{ '/assets/pdf/Saehun_Chun_CV.pdf' | relative_url }}">Academic CV</a></li>
-      <li><a href="{{ site.links.scholar | escape }}" target="_blank" rel="noopener">Google Scholar</a></li>
-      <li><a href="{{ site.links.github }}" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="{{ site.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
-      <li><a href="{{ site.links.lab }}" target="_blank" rel="noopener">Lab</a></li>
+      <li><a href="mailto:{{ site.author.email }}">{% include profile-icon.html name='email' %}<span>Email</span></a></li>
+      <li><a href="{{ '/assets/pdf/Saehun_Chun_CV.pdf' | relative_url }}">{% include profile-icon.html name='cv' %}<span>CV</span></a></li>
+      <li><a href="{{ site.links.scholar | escape }}" target="_blank" rel="noopener">{% include profile-icon.html name='scholar' %}<span>Scholar</span></a></li>
+      <li><a href="{{ site.links.github }}" target="_blank" rel="noopener">{% include profile-icon.html name='github' %}<span>GitHub</span></a></li>
+      <li><a href="{{ site.links.linkedin }}" target="_blank" rel="noopener">{% include profile-icon.html name='linkedin' %}<span>LinkedIn</span></a></li>
+      <li><a href="{{ site.links.lab }}" target="_blank" rel="noopener">{% include profile-icon.html name='lab' %}<span>Lab</span></a></li>
     </ul>
   </header>
   <section class="research-areas" aria-labelledby="areas-title">
     <div class="section-heading"><h2 id="areas-title">Current research</h2></div>
     <dl class="area-list">
       {% for area in site.data.research %}
-      <div><dt>{{ area.name }}</dt><dd>{{ area.description }}</dd></div>
+      <div><dt>{{ area.name }}</dt><dd>{{ area.short_description }}</dd></div>
       {% endfor %}
     </dl>
-  </section>
-  <section class="selected-research" aria-labelledby="selected-title">
-    <div class="section-heading"><h2 id="selected-title">Selected research</h2><a href="{{ '/research/' | relative_url }}">Research details →</a></div>
-    <ol class="project-list">
-      {% for project in site.data.projects %}
-      <li>
-        <article>
-          <div class="project-heading"><h3>{{ project.title }}</h3><p class="project-status">{{ project.status }}</p></div>
-          <p class="project-question">{{ project.question }}</p>
-          <p class="project-keywords">{{ project.keywords }}</p>
-          {% if project.paper %}<a class="project-paper" href="{{ project.paper }}" target="_blank" rel="noopener">Paper</a>{% endif %}
-        </article>
-      </li>
-      {% endfor %}
-    </ol>
   </section>
   <section class="publications" aria-labelledby="publications-title">
     <div class="section-heading"><h2 id="publications-title">Selected publications</h2><a href="{{ '/publications/' | relative_url }}">All publications →</a></div>
