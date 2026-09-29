@@ -3,9 +3,8 @@
     <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <nav aria-label="Main navigation">
       {% for item in site.nav %}
-        <a class="navlink" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        <a class="navlink" href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
       {% endfor %}
     </nav>
   </div>
 </header>
-

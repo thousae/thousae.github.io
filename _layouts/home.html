@@ -4,28 +4,52 @@
     {% include head.html %}
   </head>
   <body class="home">
-    <section class="hero" id="links" aria-label="Profile links">
-      <div class="hero-inner">
-        <p class="eyebrow">{{ site.author.role }}{% if site.author.affiliation %} / {{ site.author.affiliation }}{% endif %}</p>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include topbar.html %}
+    <main class="content home-grid" id="main-content">
+      <aside class="profile" id="links" aria-label="Profile and contact">
+        <p class="eyebrow">{{ site.author.role }}</p>
         <h1>{{ site.author.name }}</h1>
-        <p class="lede">{{ site.author.bio }}</p>
-        <div class="hero-links" aria-label="External links">
-          <a href="{{ site.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="{{ site.links.lab }}" target="_blank" rel="noopener">Lab</a>
-          <a href="{{ site.links.github }}" target="_blank" rel="noopener">GitHub</a>
-          {% if site.author.email %}<a href="mailto:{{ site.author.email }}">Email</a>{% endif %}
+        <p class="profile-bio">{{ site.author.bio }}</p>
+        <dl class="profile-details">
+          <dt>Affiliation</dt>
+          <dd><a href="{{ site.links.lab }}" target="_blank" rel="noopener">{{ site.author.affiliation }} ↗</a></dd>
+          <dt>Based in</dt>
+          <dd>{{ site.author.location }}</dd>
+        </dl>
+        <div class="profile-links" aria-label="Contact and external profiles">
+          {% if site.author.email %}<a class="email-link" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>{% endif %}
+          <a href="{{ site.links.github }}" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="{{ site.links.linkedin }}" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
-      </div>
-      <a class="scroll-cue" href="#profile" aria-label="Continue to profile"></a>
-    </section>
-
-    <section class="profile-section" id="profile" aria-label="Profile">
-      {% include topbar.html %}
-      <main class="content home-content">
+        <a class="text-link profile-more" href="{{ '/about/' | relative_url }}">More about me <span aria-hidden="true">→</span></a>
+      </aside>
+      <div class="home-content" id="profile">
         {{ content }}
-      </main>
-    </section>
+        <section class="publications" aria-labelledby="publications-title">
+          <div class="section-heading">
+            <h2 id="publications-title">Selected publications</h2>
+            <a class="text-link" href="{{ '/research/#publications' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
+          </div>
+          <article class="publication">
+            <p class="venue">ICML <span>2026</span></p>
+            <div>
+              <h3><a href="https://icml.cc/virtual/2026/poster/62313" target="_blank" rel="noopener">Functional Cache Grafting: Robust and Rapid Code-Policy Synthesis for Embodied Agents <span aria-hidden="true">↗</span></a></h3>
+              <p class="authors"><strong>Saehun Chun</strong>, Wonje Choi, Sera Choi, Sanghyun Ahn, and Honguk Woo</p>
+              <p>Function-level cache reuse for agentic workflows.</p>
+            </div>
+          </article>
+          <article class="publication">
+            <p class="venue">ICML <span>2026</span></p>
+            <div>
+              <h3><a href="https://icml.cc/virtual/2026/poster/65138" target="_blank" rel="noopener">Efficient Skill Grounding via Code Refactoring with Small Language Models <span aria-hidden="true">↗</span></a></h3>
+              <p class="authors">Sera Choi, Wonje Choi, <strong>Saehun Chun</strong>, Daehee Lee, Chaeun Lee, Jooyoung Kim, and Honguk Woo</p>
+              <p>Efficient skill grounding through code refactoring.</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
     {% include footer.html %}
   </body>
 </html>
-
