@@ -8,7 +8,7 @@ This is a Jekyll site prepared for GitHub Pages.
 - `_layouts/home.html`: profile links and complete publication list.
 - `_data/publications.yml`: shared publication records for Home and Research.
 - `_includes/publications.html`: numbered publication groups, author names, and venue details.
-- `research.md`: research directions and publication descriptions with stable paper anchors.
+- `research.md`: research directions and full publication details with stable paper anchors.
 - `about.md`: biography, education, experience, teaching, and contact.
 - `_config.yml`: profile details, external links, and navigation.
 - `assets/css/main.css`: single-column layout and responsive typography.

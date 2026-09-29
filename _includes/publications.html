@@ -15,7 +15,6 @@
         </h4>
         <p class="authors">{{ paper.authors | escape | replace: 'Saehun Chun', '<strong>Saehun Chun</strong>' }}</p>
         <p class="paper-meta">{% if include.detailed %}{{ paper.conference }} ({{ paper.venue }}){% else %}{{ paper.venue }}{% endif %} {{ paper.year }}{% if paper.distinction %} <span class="distinction">· {{ paper.distinction }}</span>{% endif %}{% if paper.url %} <span class="meta-separator">/</span> <a href="{{ paper.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}</p>
-        {% if include.detailed and paper.summary %}<p class="paper-summary">{{ paper.summary }}</p>{% endif %}
       </article>
     </li>
     {% endfor %}

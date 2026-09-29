@@ -12,20 +12,20 @@
   title: "Functional Cache Grafting: Robust and Rapid Code-Policy Synthesis for Embodied Agents"
   authors: "Saehun Chun, Wonje Choi, Sera Choi, Sanghyun Ahn, and Honguk Woo*"
   venue: ICML
+  distinction: Poster
   year: 2026
   conference: International Conference on Machine Learning
   url: https://icml.cc/virtual/2026/poster/62313
-  summary: FCGraft studies cache reuse at the function or workflow-fragment level for agentic workflows.
 
 - id: skill-grounding
   category: International conferences
   title: Efficient Skill Grounding via Code Refactoring with Small Language Models
   authors: "Sera Choi, Wonje Choi, Saehun Chun, Daehee Lee, Chaeun Lee, Jooyoung Kim, and Honguk Woo*"
   venue: ICML
+  distinction: Poster
   year: 2026
   conference: International Conference on Machine Learning
   url: https://icml.cc/virtual/2026/poster/65138
-  summary: This work studies efficient skill grounding by using small language models to refactor code.
 
 - id: undo-read-buffer
   category: Domestic conferences
@@ -34,7 +34,6 @@
   venue: KCC
   year: 2024
   conference: Korea Computer Congress
-  summary: This work studies buffer pollution caused by undo blocks in HTAP workloads and proposes an undo-read buffer mechanism to reduce that pollution.
 
 - id: undo-pages
   category: Domestic conferences
@@ -43,4 +42,3 @@
   venue: KDBC
   year: 2023
   conference: Korean DataBase Conference
-  summary: This work analyzes how undo pages pollute the buffer pool under mixed transactional and analytical workloads.
