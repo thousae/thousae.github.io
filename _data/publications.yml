@@ -1,7 +1,7 @@
 - id: hemer
   category: International conferences
   title: "HeMeR: Heterogeneous Memory Reconciliation for Embodied Agents via Structured KV Reuse"
-  authors: "Saehun Chun, Wonje Choi, Jinwoo Jang, TaeYoon Kwack, Honguk Woo"
+  authors: "Saehun Chun, Wonje Choi, Jinwoo Jang, TaeYoon Kwack, and Honguk Woo*"
   venue: NeurIPS
   year: 2026
   distinction: Oral
