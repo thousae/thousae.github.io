@@ -1,0 +1,19 @@
+- id: efficient-robot-inference
+  title: Efficient Robot Foundation Model Inference
+  status: Ongoing
+  question: How can a robot keep up as its observations change?
+  description: Studying temporal redundancy, observation reuse, asynchronous inference, and stale-state mitigation in VLA perception–action loops.
+  keywords: VLA · Temporal reuse · Asynchronous inference · Robot learning
+- id: hemer
+  title: HeMeR
+  status: NeurIPS 2026 · Oral
+  question: What can an embodied agent reuse instead of recomputing?
+  description: Structured memory and KV reuse for long-running embodied agents, with selective updates as their context changes.
+  keywords: Embodied agents · Memory · KV reuse · Efficient inference
+- id: fcgraft
+  title: Functional Cache Grafting
+  status: ICML 2026 · Poster
+  question: Can an agent build a new policy from code it already knows?
+  description: Reusing function-level code and cached computation for embodied policies, evaluated on ALFRED, TEACh, RLBench, and real-world robotic manipulation.
+  keywords: Embodied AI · Robot manipulation · Code policies · Computation reuse
+  paper: https://arxiv.org/abs/2606.13097

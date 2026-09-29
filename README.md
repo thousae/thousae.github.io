@@ -4,18 +4,23 @@ This is a Jekyll site prepared for GitHub Pages.
 
 ## Site structure
 
-- `index.md`: short home-page introduction.
-- `_layouts/home.html`: profile links and complete publication list.
-- `_data/publications.yml`: shared publication records for Home and Research.
-- `_includes/publications.html`: numbered publication groups, author names, and venue details.
-- `research.md`: research directions and full publication details with stable paper anchors.
-- `about.md`: biography, education, experience, teaching, and contact.
-- `_config.yml`: profile details, external links, and navigation.
-- `assets/css/main.css`: single-column layout and responsive typography.
+- `index.md`: shared research identity and a short introduction.
+- `_layouts/home.html`: equal research areas, selected projects, and compact international publications.
+- `_data/research.yml`: Robot Foundation Models, Embodied AI & Robot Learning, Efficient AI Systems.
+- `_data/projects.yml`: ongoing robot inference, HeMeR, and FCGraft descriptions.
+- `_data/publications.yml`: complete author lists, venues, and verified links.
+- `_includes/publications.html`: shared compact/full publication renderer; titles are plain text.
+- `research.md`: research narrative and project details.
+- `publications.md`: all five publications, grouped and numbered by international/domestic venue.
+- `about.md`: research trajectory and a link to the full academic CV.
+- `assets/pdf/Saehun_Chun_CV.pdf`: public academic CV, copied from `../CV/sep_update/` after rebuilding.
+- `_config.yml`: metadata, external profiles, and navigation.
+- `assets/css/main.css`: responsive single-column layout.
 
-Home presents the introduction and all papers in a compact reading layout. Paper
-titles are plain text; the separate Paper links open conference pages. Research
-contains research directions, and About contains the biography and career details. Publication records are updated once in the shared YAML file.
+Home omits full author lists, domestic papers, GPA, and teaching details. Full
+publication records remain under Publications; teaching and older projects remain
+in the academic CV. No unverified metrics, skills, profile links, or demo assets
+are published. Paper links are separate from non-clickable titles.
 
 ## Local setup
 

@@ -4,32 +4,19 @@ title: About
 permalink: /about/
 ---
 
-I am a researcher working on efficient serving for LLM agents. My current work focuses on memory and cache reuse in long-running agentic workflows, where agents repeatedly plan, call tools, update workspace state, and return to related contexts over time.
+I am interested in building foundation models that can interact efficiently with the physical world. My work combines **robot foundation models, embodied AI, and efficient AI systems**.
 
-A central question in my research is how serving systems should represent and reuse intermediate state. Instead of treating every agent request as independent, I study reusable units such as function-level computation, working memory objects, tool results, and KV-cache spans. The goal is to reduce latency and memory cost while preserving correctness when the agent's context changes.
+I am an integrated M.S./Ph.D. student in Software at Sungkyunkwan University, advised by Honguk Woo in [CSI Agent Group]({{ site.links.lab }}). My current research examines efficient multimodal inference, including VLA models operating under continuously changing observations.
 
-I am especially interested in the boundary between LLM serving systems and agent workloads: how new interaction patterns create new bottlenecks, and how memory/cache systems should adapt to them.
+My earlier research focused on memory management and ML systems. That background led me to study computation and state reuse in long-running AI systems, and how those mechanisms can support responsive embodied agents.
 
-## Education
+## Background
 
-- **Integrated M.S./Ph.D. Program in Software**, Sungkyunkwan University, 2025–Present. Advisor: Honguk Woo.
-- **B.S. in Software**, Sungkyunkwan University, 2019–2024.
+I joined CSI Lab as a graduate researcher in 2024 and began the integrated M.S./Ph.D. program in 2025. Previously, I completed my B.S. in Software at Sungkyunkwan University and worked with VLDB Lab on memory management for HTAP workloads.
 
-## Research experience
+My research includes HeMeR (**NeurIPS 2026 · Oral**) and two **ICML 2026 · Poster** papers. I also work on efficient system support for foundation-model and agent workloads through the Samsung Electronics HiPER collaboration.
 
-- **Graduate Researcher**, CSI Lab, Sungkyunkwan University, 2024–Present. Memory systems and cache reuse for LLM agents.
-- **Undergraduate Research Assistant**, VLDB Lab, Sungkyunkwan University, 2023–2024. Memory management and buffer-pool behavior in HTAP workloads.
-
-## Teaching
-
-- **Hands-on Training Instructor** · GenAI PowerUser Program Level 4 (Multi Agent framework), Samsung Electronics University · 2026–Present.
-- **Hands-on Training Instructor** · Artificial Intelligence Project, Sungkyunkwan University · Fall 2026.
-- **Teaching Assistant** · System Programming, Sungkyunkwan University · Spring 2026.
-- **Teaching Assistant** · Mobile Application Programming, Sungkyunkwan University · Spring 2025.
-
-## Awards
-
-Graduate Research Fellowship, National Research Foundation of Korea, 2025–2026.
+My [academic CV]({{ '/assets/pdf/Saehun_Chun_CV.pdf' | relative_url }}) contains the full publication record, projects, teaching experience, and awards.
 
 ## Contact
 

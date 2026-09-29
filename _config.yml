@@ -1,5 +1,5 @@
 title: Saehun Chun
-description: Personal academic website and links.
+description: Robot foundation models, embodied AI, and efficient AI systems.
 url: "https://thousae.github.io"
 baseurl: ""
 lang: en
@@ -7,13 +7,14 @@ timezone: Etc/UTC
 
 author:
   name: Saehun Chun
-  role: Researcher
+  role: Integrated M.S./Ph.D. Student
   affiliation: CSI Agent Group
-  location: Seoul, Korea
+  location: Suwon, Korea
   email: "thousae@skku.edu"
-  bio: "I work on memory and cache systems for efficient LLM agent serving."
+  bio: "I work on robot foundation models and embodied AI, with a focus on efficient inference, memory, and computation reuse for interactive multimodal systems."
 
 links:
+  scholar: "https://scholar.google.com/citations?user=v-aLlUsAAAAJ&hl=ko"
   linkedin: "https://www.linkedin.com/in/saehun-chun-9b19061ab/"
   lab: "https://csiagentgroup.com/"
   github: "https://github.com/thousae"
@@ -23,6 +24,8 @@ nav:
     url: /
   - title: Research
     url: /research/
+  - title: Publications
+    url: /publications/
   - title: About
     url: /about/
 
