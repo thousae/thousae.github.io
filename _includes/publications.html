@@ -6,13 +6,7 @@
     {% for paper in group.items %}
     <li class="publication" id="{{ paper.id }}">
       <article>
-        <h4 class="paper-title">
-          {% if include.detailed %}
-            {{ paper.title }}
-          {% else %}
-            <a href="{{ '/research/' | relative_url }}#{{ paper.id }}">{{ paper.title }}</a>
-          {% endif %}
-        </h4>
+        <h4 class="paper-title">{{ paper.title }}</h4>
         <p class="authors">{{ paper.authors | escape | replace: 'Saehun Chun', '<strong>Saehun Chun</strong>' }}</p>
         <p class="paper-meta">{% if include.detailed %}{{ paper.conference }} ({{ paper.venue }}){% else %}{{ paper.venue }}{% endif %} {{ paper.year }}{% if paper.distinction %} <span class="distinction">· {{ paper.distinction }}</span>{% endif %}{% if paper.url %} <span class="meta-separator">/</span> <a href="{{ paper.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}</p>
       </article>

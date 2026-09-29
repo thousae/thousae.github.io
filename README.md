@@ -14,8 +14,8 @@ This is a Jekyll site prepared for GitHub Pages.
 - `assets/css/main.css`: single-column layout and responsive typography.
 
 Home presents the introduction and all papers in a compact reading layout. Paper
-titles link to their Research entries; About contains the longer biography and
-career details. Publication records are updated once in the shared YAML file.
+titles are plain text; the separate Paper links open conference pages. Research
+contains research directions, and About contains the biography and career details. Publication records are updated once in the shared YAML file.
 
 ## Local setup
 

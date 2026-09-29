@@ -38,8 +38,6 @@ nav { display: flex; gap: 25px; flex-wrap: wrap; }
 .publication { padding: 15px 0 16px 5px; margin: 0; border-bottom: 1px solid var(--border); scroll-margin-top: 24px; }
 .publication::marker { font-size: 13px; color: var(--muted); font-weight: 600; }
 .paper-title { margin: 0 0 5px; font-size: 16px; line-height: 1.5; }
-.paper-title a { color: var(--ink); }
-.paper-title a:hover { color: var(--accent); }
 .authors { margin: 0 0 4px; color: var(--muted); font-size: 13px; line-height: 1.6; }
 .authors strong { color: var(--ink); }
 .paper-meta { margin: 0; color: var(--muted); font-size: 13px; font-weight: 600; }
