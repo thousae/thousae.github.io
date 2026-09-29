@@ -29,27 +29,31 @@ I study systems that make this tradeoff explicit. The goal is to reduce latency 
 
 ## Publications
 
-### International conferences
+### International conferences (3)
 
-1. **[Functional Cache Grafting: Robust and Rapid Code-Policy Synthesis for Embodied Agents](https://icml.cc/virtual/2026/poster/62313)**  
-   **Saehun Chun**, Wonje Choi, Sera Choi, Sanghyun Ahn, and Honguk Woo*.  
-   *International Conference on Machine Learning (ICML), 2026.*  
-   FCGraft studies cache reuse at the function or workflow-fragment level for agentic workflows.  
+1. **HeMeR: Heterogeneous Memory Reconciliation for Embodied Agents via Structured KV Reuse**<br>
+   **Saehun Chun**, Wonje Choi, Jinwoo Jang, TaeYoon Kwack, Honguk Woo.<br>
+   *Conference on Neural Information Processing Systems (NeurIPS), 2026.* **Oral.**<br>
 
-2. **[Efficient Skill Grounding via Code Refactoring with Small Language Models](https://icml.cc/virtual/2026/poster/65138)**  
-   Sera Choi, Wonje Choi, **Saehun Chun**, Daehee Lee, Chaeun Lee, Jooyoung Kim, and Honguk Woo*.  
-   *International Conference on Machine Learning (ICML), 2026.*  
-   This work studies efficient skill grounding by using small language models to refactor code.  
+2. **[Functional Cache Grafting: Robust and Rapid Code-Policy Synthesis for Embodied Agents](https://icml.cc/virtual/2026/poster/62313)**<br>
+   **Saehun Chun**, Wonje Choi, Sera Choi, Sanghyun Ahn, and Honguk Woo*.<br>
+   *International Conference on Machine Learning (ICML), 2026.*<br>
+   FCGraft studies cache reuse at the function or workflow-fragment level for agentic workflows.<br>
 
-### Domestic conferences
+3. **[Efficient Skill Grounding via Code Refactoring with Small Language Models](https://icml.cc/virtual/2026/poster/65138)**<br>
+   Sera Choi, Wonje Choi, **Saehun Chun**, Daehee Lee, Chaeun Lee, Jooyoung Kim, and Honguk Woo*.<br>
+   *International Conference on Machine Learning (ICML), 2026.*<br>
+   This work studies efficient skill grounding by using small language models to refactor code.<br>
 
-1. **Undo Read Buffer: Preventing Buffer Pollution due to Undo Blocks in HTAP Workloads**  
-   **Saehun Chun**, Jonghyeok Park, Sang-Won Lee*, and Young Ik Eom.  
-   *Korea Computer Congress (KCC), 2024.*  
+### Domestic conferences (2)
+
+1. **Undo Read Buffer: Preventing Buffer Pollution due to Undo Blocks in HTAP Workloads**<br>
+   **Saehun Chun**, Jonghyeok Park, Sang-Won Lee*, and Young Ik Eom.<br>
+   *Korea Computer Congress (KCC), 2024.*<br>
    This work studies buffer pollution caused by undo blocks in HTAP workloads and proposes an undo-read buffer mechanism to reduce that pollution.
 
-2. **Analysis of Buffer Pollution Caused by Undo Pages in HTAP Workloads**  
-   **Saehun Chun**, Bo-Hyun Lee, Kyong-Shik Lee, Sang-Won Lee*, and Young Ik Eom.  
-   *Korean DataBase Conference (KDBC), 2023.*  
+2. **Analysis of Buffer Pollution Caused by Undo Pages in HTAP Workloads**<br>
+   **Saehun Chun**, Bo-Hyun Lee, Kyong-Shik Lee, Sang-Won Lee*, and Young Ik Eom.<br>
+   *Korean DataBase Conference (KDBC), 2023.*<br>
    This work analyzes how undo pages pollute the buffer pool under mixed transactional and analytical workloads.
 
