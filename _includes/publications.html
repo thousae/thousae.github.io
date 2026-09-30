@@ -2,14 +2,14 @@
 {% if include.compact %}{% assign papers = papers | where: 'category', 'International conferences' %}{% endif %}
 {% assign groups = papers | group_by: 'category' %}
 {% for group in groups %}
-<section class="publication-group" {% if include.compact %}aria-label="Selected international publications"{% else %}aria-labelledby="group-{{ forloop.index }}"{% endif %}>
+<section class="publication-group" {% if include.compact %}aria-label="International publications"{% else %}aria-labelledby="group-{{ forloop.index }}"{% endif %}>
   {% unless include.compact %}<h3 class="group-title" id="group-{{ forloop.index }}">{{ group.name }} <span>({{ group.items | size }})</span></h3>{% endunless %}
   <ol class="publication-list">
     {% for paper in group.items %}
     <li class="publication" id="{{ paper.id }}">
       <article>
         {% if include.compact %}<h3 class="paper-title">{{ paper.title }}</h3>{% else %}<h4 class="paper-title">{{ paper.title }}</h4>{% endif %}
-        {% unless include.compact %}<p class="authors">{{ paper.authors | escape | replace: 'Saehun Chun', '<strong>Saehun Chun</strong>' }}</p>{% endunless %}
+        <p class="authors">{{ paper.authors | escape | replace: 'Saehun Chun', '<strong>Saehun Chun</strong>' }}</p>
         <p class="paper-meta">{% if include.detailed %}{{ paper.conference }} ({{ paper.venue }}){% else %}{{ paper.venue }}{% endif %} {{ paper.year }}{% if paper.distinction %} <span class="distinction">· {{ paper.distinction }}</span>{% endif %}{% if paper.url %} <span class="meta-separator">/</span> <a href="{{ paper.url }}" target="_blank" rel="noopener">Paper</a>{% endif %}</p>
       </article>
     </li>

@@ -17,7 +17,7 @@ This is a Jekyll site prepared for GitHub Pages.
 - `_config.yml`: metadata, external profiles, and navigation.
 - `assets/css/main.css`: responsive single-column layout.
 
-Home omits selected-project descriptions, full author lists, domestic papers, GPA, and teaching details. Full
+Home shows full author lists beneath publication titles and omits selected-project descriptions, domestic papers, GPA, and teaching details. Full
 publication records remain under Publications; teaching and older projects remain
 in the academic CV. No unverified metrics, skills, profile links, or demo assets
 are published. Paper links are separate from non-clickable titles.
