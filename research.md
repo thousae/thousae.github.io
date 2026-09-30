@@ -14,7 +14,7 @@ My work brings together **robot foundation models, embodied AI, and efficient AI
 {{ area.description }}
 {% endfor %}
 
-## Selected research
+## Projects
 
 {% for project in site.data.projects %}
 <article class="research-project" id="{{ project.id }}">
