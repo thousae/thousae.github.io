@@ -1,19 +1,36 @@
-- id: efficient-robot-inference
-  title: Efficient Robot Foundation Model Inference
-  status: Ongoing
-  question: How can a robot keep up as its observations change?
-  description: Studying temporal redundancy, observation reuse, asynchronous inference, and stale-state mitigation in VLA perception–action loops.
-  keywords: VLA · Temporal reuse · Asynchronous inference · Robot learning
-- id: hemer
-  title: HeMeR
-  status: NeurIPS 2026 · Oral
-  question: What can an embodied agent reuse instead of recomputing?
-  description: Structured memory and KV reuse for long-running embodied agents, with selective updates as their context changes.
-  keywords: Embodied agents · Memory · KV reuse · Efficient inference
-- id: fcgraft
-  title: Functional Cache Grafting
-  status: ICML 2026 · Poster
-  question: Can an agent build a new policy from code it already knows?
-  description: Reusing function-level code and cached computation for embodied policies, evaluated on ALFRED, TEACh, RLBench, and real-world robotic manipulation.
-  keywords: Embodied AI · Robot manipulation · Code policies · Computation reuse
-  paper: https://arxiv.org/abs/2606.13097
+- id: hiper
+  title: "HiPER: High-Performance Exabyte Storage Systems"
+  period: 2024–Present
+  role: Project Manager / Graduate Researcher
+  organization: Samsung Electronics
+  points:
+    - Study storage-scale memory for foundation-model embodied agents, storing and reusing KV caches for efficient, reliable action selection.
+- id: accelerated-insight-reasoning
+  title: Accelerated Insight Reasoning via Continual Learning
+  period: 2025–2029
+  role: Project Researcher
+  organization: Funded by MSIT through IITP
+  points:
+    - Develop reusable robot-policy functions and structured neural memory to retain validated experience and reduce repeated computation across embodied tasks.
+- id: adaptive-personality
+  title: Adaptive Personality for Intelligent Agents
+  period: 2022–2026
+  role: Project Researcher
+  organization: Funded by MSIT through IITP
+  points:
+    - Develop embodied agents that adapt reusable skills to changing tasks and robot configurations through code refactoring and feedback-driven policy repair.
+- id: global-capstone
+  title: Global Capstone Design
+  period: Jan. 2024
+  role: Project Manager
+  organization: Sungkyunkwan University & Victoria University of Wellington
+  points:
+    - Prototyped ML-based MySQL buffer management; presented the work and collaborated with students at Victoria University of Wellington.
+- id: industry-academic-collaboration
+  title: Industry-Academic Collaboration Project
+  period: "2020"
+  role: Project Manager
+  organization: SK M&N Service
+  points:
+    - Led a Python/TensorFlow project for speech-based video summarization.
+  code: https://github.com/thousae/SKmnService

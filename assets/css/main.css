@@ -76,12 +76,22 @@ footer span { margin: 0 9px; }
 .area-list > div { margin: 12px 0; }
 .area-list dt { font-size: 14px; font-weight: 700; }
 .area-list dd { margin: 2px 0 0; font-size: 14px; color: var(--muted); }
-.project-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 6px 18px; flex-wrap: wrap; }
-.project-heading h3, .page .project-heading h3 { margin: 0; font-size: 16px; }
-.project-status { margin: 0; color: var(--accent); font-size: 12px; font-weight: 700; }
-.project-keywords { margin: 6px 0 0; font-size: 12px; color: var(--muted); }
-.research-project { margin: 20px 0; padding-bottom: 18px; border-bottom: 1px solid var(--border); scroll-margin-top: 24px; }
-.research-project .project-heading { margin-bottom: 12px; }
+.research-intro { max-width: 740px; }
+.research-section { margin-top: 36px; }
+.page .research-section > h2 { margin: 0 0 20px; padding-bottom: 11px; border-bottom: 2px solid var(--accent); font-size: 22px; }
+.page .research-area-list, .page .research-project-list { list-style: none; margin: 0; padding: 0; }
+.page .research-area-list > li { margin: 0 0 22px; }
+.page .research-area-list h3, .page .project-details h3 { margin: 0 0 5px; font-size: 16px; line-height: 1.5; }
+.page .research-points { margin: 7px 0 0; padding-left: 20px; list-style-type: disc; }
+.page .research-points li { margin: 0 0 5px; padding-left: 2px; }
+.research-points li::marker { color: var(--accent); }
+.page .research-project { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 20px; margin: 0; padding: 22px 0; border-bottom: 1px solid var(--border); scroll-margin-top: 24px; }
+.page .research-project:first-child { padding-top: 0; }
+.page .research-project:last-child { padding-bottom: 0; border-bottom: 0; }
+.project-period { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+.project-role { margin: 0 0 2px; font-style: italic; font-size: 14px; }
+.project-organization { margin: 0; color: var(--muted); font-size: 13px; }
+.project-links { margin: 8px 0 0; font-size: 13px; font-weight: 600; }
 @media (max-width: 600px) { nav { gap: 14px; } .identity { font-size: 14px; } }
 
 .profile-links { margin-top: 20px; gap: 10px 20px; }
@@ -92,4 +102,6 @@ footer span { margin: 0 9px; }
 @media (max-width: 600px) {
   .area-list > div { grid-template-columns: 1fr; gap: 2px; margin: 14px 0; }
   .profile-links { gap: 10px 18px; }
+  .page .research-project { grid-template-columns: 1fr; gap: 5px; padding-block: 20px; }
+  .project-period { margin: 0; }
 }
