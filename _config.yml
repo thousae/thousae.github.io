@@ -29,6 +29,14 @@ nav:
   - title: About
     url: /about/
 
+# Video popup shown on page load during [start, end) (KST).
+# src: a YouTube URL or a local file path such as /assets/video/intro.mp4
+video_popup:
+  enabled: true
+  start: "2026-12-07T00:00:00+09:00"
+  end: "2026-12-12T00:00:00+09:00"
+  src: "/assets/video/HeMeR%20Demo%20Film.mp4"
+
 markdown: kramdown
 permalink: /:title/
 

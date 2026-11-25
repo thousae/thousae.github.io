@@ -1,0 +1,74 @@
+{%- assign popup = site.video_popup -%}
+{%- if popup.enabled and popup.src != "" -%}
+<div class="video-popup" id="video-popup" role="dialog" aria-modal="true" aria-label="Video" hidden>
+  <div class="video-popup-frame">
+    <button type="button" class="video-popup-close" aria-label="Close video">&times;</button>
+  </div>
+</div>
+<script>
+(function () {
+  var start = new Date({{ popup.start | jsonify }});
+  var end = new Date({{ popup.end | jsonify }});
+  var src = {{ popup.src | relative_url | jsonify }};
+  var now = new Date();
+  if (!(now >= start && now < end)) return;
+
+  // Show once per browser session, not on every page navigation.
+  var key = "video-popup-seen:" + src;
+  try { if (sessionStorage.getItem(key)) return; } catch (e) {}
+
+  // LinkedIn visitors (tagged link ?from=linkedin, or a LinkedIn referrer) skip the popup;
+  // marking the session keeps it from appearing on later page views.
+  var fromLinkedIn = /(?:^|[?&])from=linkedin(?:&|$)/.test(location.search) ||
+    /(?:^|\.)(?:linkedin\.com|lnkd\.in)$/.test((function () {
+      try { return new URL(document.referrer).hostname; } catch (e) { return ""; }
+    })());
+  if (fromLinkedIn) {
+    try { sessionStorage.setItem(key, "1"); } catch (e) {}
+    return;
+  }
+
+  var popup = document.getElementById("video-popup");
+  var frame = popup.querySelector(".video-popup-frame");
+  var closeButton = popup.querySelector(".video-popup-close");
+
+  var yt = src.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{11})/);
+  var player;
+  if (yt) {
+    player = document.createElement("iframe");
+    player.src = "https://www.youtube-nocookie.com/embed/" + yt[1] + "?autoplay=1&mute=1&controls=0&loop=1&playlist=" + yt[1] + "&playsinline=1&rel=0";
+    player.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    player.allowFullscreen = true;
+    player.title = "Video";
+  } else {
+    player = document.createElement("video");
+    player.src = src;
+    // Silent: always muted, no controls to unmute.
+    player.controls = false;
+    player.autoplay = true;
+    player.loop = true;
+    player.muted = true;
+    player.setAttribute("muted", "");
+    player.playsInline = true;
+  }
+  frame.appendChild(player);
+
+  function close() {
+    popup.hidden = true;
+    document.body.classList.remove("video-popup-open");
+    player.remove();
+    document.removeEventListener("keydown", onKey);
+    try { sessionStorage.setItem(key, "1"); } catch (e) {}
+  }
+  function onKey(e) { if (e.key === "Escape") close(); }
+
+  closeButton.addEventListener("click", close);
+  popup.addEventListener("click", function (e) { if (e.target === popup) close(); });
+  document.addEventListener("keydown", onKey);
+
+  popup.hidden = false;
+  document.body.classList.add("video-popup-open");
+  closeButton.focus();
+})();
+</script>
+{%- endif -%}
