@@ -3,6 +3,8 @@ layout: default
 ---
 <article class="home-page">
   <header class="profile" id="profile">
+    <img class="profile-photo" src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Photo of {{ site.author.name }}" width="480" height="523">
+    <div class="profile-text">
     <h1>{{ site.author.name }}</h1>
     <p class="identity">Efficient AI Systems · Foundation Models · Embodied AI</p>
     {{ content }}
@@ -14,6 +16,7 @@ layout: default
       <li><a href="{{ site.links.linkedin }}" target="_blank" rel="noopener">{% include profile-icon.html name='linkedin' %}<span>LinkedIn</span></a></li>
       <li><a href="{{ site.links.lab }}" target="_blank" rel="noopener">{% include profile-icon.html name='lab' %}<span>Lab</span></a></li>
     </ul>
+    </div>
   </header>
   <section class="research-areas" aria-labelledby="areas-title">
     <div class="section-heading"><h2 id="areas-title">Current research</h2></div>

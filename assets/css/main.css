@@ -113,3 +113,11 @@ footer span { margin: 0 9px; }
 .video-popup-close { position: absolute; top: -44px; right: 0; width: 36px; height: 36px; padding: 0; border: 0; background: none; color: #fff; font-size: 32px; line-height: 1; cursor: pointer; }
 .video-popup-close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
 body.video-popup-open { overflow: hidden; }
+
+.profile { display: flex; flex-direction: row-reverse; align-items: flex-start; gap: 32px; }
+.profile-text { flex: 1; min-width: 0; }
+.profile-photo { flex: 0 0 170px; width: 170px; height: auto; border-radius: 6px; object-fit: cover; }
+@media (max-width: 600px) {
+  .profile { flex-direction: column; gap: 18px; }
+  .profile-photo { flex-basis: auto; width: 140px; }
+}
